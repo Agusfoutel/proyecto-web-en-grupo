@@ -1,0 +1,333 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+body {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 63px;
+    /* background-color: #171717; */
+    background-color: #424f57;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.navbar {
+    display: flex;
+    margin-right: 10px;
+}
+
+.logo {
+    margin-left: 30px;
+}
+
+
+.logo a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.navbar a{
+    display: block;
+    padding: 23px 20px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+/* efecto para q cunado toque en la barra de inicio, contacto... se ponga en gris */
+.navbar a:hover{
+    /* background-color: rgb(85, 84, 84); */
+    background-color: #172b32;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.header{
+    height: 60vh !important;
+    background: url(img/bariloche.jpg) no-repeat center;
+    background-size: cover;
+    
+}
+
+.title {
+    margin-bottom: 40px;
+    /* tamaño del titulo todos */
+    font-size: 55px;   
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+
+}
+
+
+.header p{
+    margin-bottom: 55px;
+    font-size: 20px;
+    color: #fff;
+    padding: 0 100px; 
+} 
+
+.btn{
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 40px;
+    border: 1px solid #707054;
+    color: #fff;
+    text-decoration: none;
+    background: #707054;
+}
+
+.btn:hover {
+    background: #abab84;
+}
+
+.btn-home{
+    display: flex;
+}
+
+.btn-home a{
+    margin: 0 10px;
+}
+
+.content {
+    height: 50vh;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sau{
+    padding: 50px;
+    background: #16131f;
+}
+
+.box-container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.box-container .box {
+    height: 200px;
+    width: 300px;
+    background: #101010;
+    text-align: center;
+    border-radius: 1rem;
+
+    margin: 2rem;
+}
+
+.box-container .box i {
+    height: 3rem;
+    width: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    border-radius: 50%;
+    color: #fff;
+    background: #707053;
+    font-size: 2rem;
+    margin: 1rem 0;
+
+}
+
+.box-container .box h3 {
+    font-size: 20px;
+    color: #707054;
+}
+
+.box-container .box p { 
+    padding: 0 15px;
+    font-size: 16px;
+}
+
+.about{
+    /* background: #1a1724; */
+    background: #727b84;
+    /* background: #c4a0a4; */
+    font-size: 20px;
+}
+
+.price{
+    background: url(img/bariloche.jpg) no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+}
+
+.contact{
+    padding-top: 20px;
+    /* background: #151515; */
+    /* background: #2f343a; */
+    background: #423839;
+    padding-bottom:  0;
+}
+
+
+@media (max-width: 768px){
+    .title{
+        margin-bottom: 0;
+        font-size: 40px;
+    }
+
+    .sau{
+        height: 120vh;
+    }
+
+    .navbar{
+        display: none;
+    }
+}
+
+
+
+/* ----------------------------seccion viajes--------------------------------------------------- */
+.seccion {   
+    min-height: 80vh;
+    margin: 1em, 0;
+    padding: 2em;
+    display: flex;
+    flex-flow: column wrap;  
+    justify-content: center;
+    align-items: center;
+    /* background: none; */
+    background: #cbc7bf;
+    /* background: #145674; */
+    /* box-shadow: 0 0 3em 3em #14567499; */
+    /* margin: 2em; */
+    padding: 2em 1em;
+}
+
+h2 {
+    margin: 0 auto;
+    font-size: 3em; 
+    font-weight: bold;
+}
+
+
+
+/* nuestros viajes */
+
+.contenedor{
+   /* min-height: 80vh; */
+       margin: 0;
+       /* padding: 2em; */
+   
+       display: flex;
+       flex-flow: wrap;
+       justify-content: center;
+       align-items: center;
+   
+       /* margin: 2em; */
+       padding: 2em 1em;
+}
+
+.card{
+   position: relative;
+   width: 300px;
+   height: 250px;
+   margin: 20px;
+   /* display: flex; */
+   /* float: left; */
+}
+
+.card .face{
+   position: absolute;
+   width: 100%; 
+   height: 100%;
+   backface-visibility: hidden;
+   border-radius: 10px;
+   overflow: hidden;
+   transition: 2s;
+}
+
+
+.card .front{
+   transform: perspective(600px) rotateY(0deg);
+   box-shadow: 0 5px 10px #000;
+}
+
+.card .front .img{
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+/* .card .front h3{
+   position: absolute;
+   bottom: 0;
+   width: 100%;
+   height: 45px;
+   line-height: 50px;
+   color:#000 ;
+   font-size: 25px;
+   text-align: center;
+} */
+
+.card .back{
+transform: perspective(600px) rotateY(180deg);
+background:linear-gradient( #DBD4D0 ,#556882 );
+padding: 10px;
+color: #f3f3f3;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+text-align: center;
+box-shadow: 0 5px 10px #000;
+
+}
+
+.card .back .link{
+   border-top: solid 1px #f3f3f3;
+   height: 50px;
+   line-height: 50px;
+}
+
+
+
+.card .back h3{
+   font-size: 30px;
+   margin-top: 20px;
+   letter-spacing: 2px;
+   color: #000;
+}
+
+.card .back p{
+   margin: 2px;
+   letter-spacing: 1px;
+   color: #000;
+   text-align: left;
+}
+
+
+.card:hover .front{
+   transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .back {
+   transform: perspective(600px) rotateY(360deg);
+}
+

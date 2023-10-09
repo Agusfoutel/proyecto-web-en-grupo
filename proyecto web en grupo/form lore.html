@@ -1,0 +1,178 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+
+    <!--  -->
+<link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <!--  -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- enlace a nuestro archivo css -->
+<link rel="stylesheet" href="estiloFormulario.css">
+
+</head>
+
+
+<body>
+    <div class="about-content">
+        <a href="index.html" class="read-more">Volver al inicio</a>
+    </div>
+    <!-- <div class="head">
+        <div class="logo">
+            <a href="#"><img src="img/arg descub.png" width="100" height="60" alt=""></a>
+            
+        </div>
+
+        <nav class="navbar">
+            <a href="index.html">Inicio</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href= "#contactos">Contactos</a>
+            <a href="#nuestrosViajes">Viajes</a>
+            <a href="#comentarios">Comentarios</a>
+            <a href="log in.html">Log In</a>
+        </nav>
+
+    </div> -->
+
+    
+
+    <!-- <main> representa el contenido principal del <body> de un documento o aplicación -->
+<main>
+
+<h1>Ingrese sus datos para registrarse</h1>
+<!-- todo el formulario -->
+    <form action="" class="formulario" id="formulario">
+
+        <!-- Grupo: Nombre -->
+        <div class="formulario__grupo" id="grupo__nombre">
+            <label for="nombre" class="formulario__label">Nombre</label>
+            <div class="formulario__grupo-input">
+                <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="ingrese su nombre">
+                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">El nombre tiene que ser de 4 a 16 dígitos y solo puede contener letras.</p>
+        </div>
+
+        <!-- Grupo Apellido -->
+        <div class="formulario__grupo" id="grupo__apellido">
+            <label for="apellido" class="formulario__label">Apellido</label>
+            <div class="formulario__grupo-input">
+                <input type="text" class="formulario__input" name="apellido" id="apellido" placeholder="ingrese su apellido">
+                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">El apellido tiene que ser de 4 a 16 dígitos y solo puede contener letras.</p>
+        </div>
+ 
+        <!-- Grupo: Contraseña -->
+        <div class="formulario__grupo" id="grupo__password">
+            <label for="password" class="formulario__label">Contraseña</label>
+            <div class="formulario__grupo-input">
+                <input type="password" class="formulario__input" name="password" id="password" placeholder="******">
+                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">La contraseña tiene que ser de 4 a 12 dígitos.</p>
+        </div>
+        
+        <!-- Grupo: Contraseña 2 -->
+        <div class="formulario__grupo" id="grupo__password2">
+            <label for="password2" class="formulario__label">Repetir Contraseña</label>
+            <div class="formulario__grupo-input">
+                <input type="password" class="formulario__input" name="password2" id="password2" placeholder="******">
+                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">Ambas contraseñas deben ser iguales.</p>
+        </div>
+
+
+
+
+
+
+
+       <!-- - Grupo: Correo -->
+        <div class="formulario__grupo" id="grupo__correo">
+            <label for="correo" class="formulario__label">Correo Electronico (USUARIO)</label>
+            <div class="formulario__grupo-input">
+                <input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com">
+                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guin bajo.</p>
+        </div>
+
+
+        <!-- - Grupo: Telefono -->
+        <div class="formulario__grupo" id="grupo__telefono">
+            <label for="telefono" class="formulario__label">Telefono</label>
+            <div class="formulario__grupo-input">
+                <input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="12-34567890">
+                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">Por favor ingrese su numero sin 0 ni 15 </p>
+        </div>
+       
+    
+    <!-- Grupo: Terminos y Condiciones -->
+    <div class="formulario__grupo" id="grupo__terminos">
+        <label class="formulario__label check" >
+            <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+            Acepto los Terminos y Condiciones
+        </label>
+    </div>
+
+
+       
+        <!-- Grupo: Region -->
+
+       <!-- <div class="formulario__grupo" id="grupo__region">
+        <label for="region" class="formulario__label">Indique Destino</label>
+        <div class="formulario__grupo-input">
+        <select class="formulario__input"name="pais" id="pais">
+            <option selected disabled value="">Opcional</option>
+            <option value="litoral">Litoral</option>
+            <option value="noroeste">Noroeste</option>
+            <option value="cuyo">Cuyo</option>
+            <option value="sierras">Sierras</option>
+            <option value="pampa">Pampa</option>
+            <option value="buenos aires">Buenos Aires</option>
+            <option value="patagonia">Patagonia</option>
+            <option value="extremo austral">Extremo Austral</option>
+        </select> -->
+        <!-- <i class="formulario__validacion-estado fas fa-times-circle"></i> -->
+        <!-- </div>
+        
+
+       </div> -->
+
+
+
+        <!-- mensaje de ERROR (con icono) -->
+        <div class="formulario__mensaje" id="formulario__mensaje">
+            <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+        </div>
+        
+        <!-- boton ENVIAR -->
+
+        <div class="formulario__grupo formulario__grupo-btn-enviar">
+            <button type="submit" class="formulario__btn">Enviar</button>
+            <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Usuario registrado <b>EXITOSAMENTE...</b></p>
+        </div>
+
+
+    </form>
+</main>
+    
+
+
+
+
+
+    <!-- nuestro archivo de js -->
+    <script src="formulario.js"></script>
+
+    <!-- enlace de archivo de iconos -->
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+</body>
+</html>

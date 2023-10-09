@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+
+body {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 63px;
+    background-color: #424f57;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.navbar {
+    display: flex;
+    margin-right: 10px;
+}
+
+.logo {
+    margin-left: 30px;
+}
+
+
+.logo a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.navbar a{
+    display: block;
+    padding: 23px 20px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+/* efecto para q cunado toque en la barra de inicio, contacto... se ponga en gris */
+.navbar a:hover{
+    background-color: rgb(85, 84, 84);
+}
+
+
+/* --------------------------------------------------------------------------------------------------------------------------------------- */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+
+
+.testimonials{
+    /* titulo y fondo del titulo */
+    padding: 200px 0;
+    background-color: #d7dbd8;
+    /* background: #ffffff; */
+    /* color: #434343; */
+    text-align: center;
+}
+
+.inner{
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+}
+
+.border{  
+    /* para poner una linea entre el titulo y lo de abajo */
+    width: 160px;
+    height: 5px;
+    background: #2f2344;
+    margin: 26px auto;
+}
+
+.row{
+    /* para poner uno al lado del otro */
+    display: flex; 
+    /* flex-wrap: wrap; */
+    justify-content: center;
+}
+
+.col{
+    flex: 33.33%;
+    max-width: 33.33%;
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+.testimonial{
+    background:#afb1af;;
+    padding: 30px;
+}
+
+.testimonial img{
+    width: 140px;
+    height:130px;
+    border-radius: 50%;   
+}
+
+.name{
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+
+.stars{
+    color: rgb(175, 175, 22);
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width:960px) {
+.col{
+    flex: 100%;
+    max-width: 80%;
+}
+}
+
+@media screen and (max-width:600px) {
+    .col{
+        flex: 100%;
+        max-width: 8100%;
+    }
+    }
